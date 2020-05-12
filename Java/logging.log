@@ -1,0 +1,2 @@
+[INFO ] 2020-05-12 13:26:18.532 [main] LogThis - INSERT INTO CAR VALUES(MYSEQ.NEXTVAL,'Chevrolet','2011, Equinox LT, 95K miles',13599.0,'Available')has been inserted.
+[INFO ] 2020-05-12 13:36:33.897 [main] LogThis - Yan has Logged in.
