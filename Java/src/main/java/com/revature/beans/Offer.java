@@ -79,7 +79,7 @@ public class Offer {
 
 	@Override
 	public String toString() {
-		return "The car I own: [carname=" + carname + ", price=" + price + ", custome name=" + cusname + "]\n";
+		return "Cars I own: [Car ID="+carid+", Car Name=" + carname + ", price=$" + price + "]\n";
 	}
 	
 	

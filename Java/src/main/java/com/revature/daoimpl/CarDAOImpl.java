@@ -1,6 +1,7 @@
 package com.revature.daoimpl;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -33,12 +34,22 @@ static Scanner scan = new Scanner(System.in);
 		Scanner sc3 =new Scanner(System.in);
 		Double price = sc3.nextDouble();
 		
-		Connection conn = cf.getConnection();
-		Statement stmt = conn.createStatement();
-		String sql = "INSERT INTO CAR VALUES(MYSEQ.NEXTVAL" + ",'"+make+"','"+info+"',"+price+",'Available')";
-		stmt.executeQuery(sql);	
+//		<Statement to execute a query>
+//		Connection conn = cf.getConnection();
+//		Statement stmt = conn.createStatement();
+//		String sql = "INSERT INTO CAR VALUES(MYSEQ.NEXTVAL" + ",'"+make+"','"+info+"',"+price+",'Available')";
+//		stmt.executeQuery(sql);	
 		
-		LogThis.LogIt("info", sql+ "has been inserted.");
+//		<PreparedStatement to execute a query>
+		Connection conn = cf.getConnection();
+		String sql = "INSERT INTO CAR VALUES(MYSEQ.NEXTVAL,?,?,?,'Available')";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setString(1, make);
+		ps.setString(2, info);
+		ps.setDouble(3, price);
+		ps.executeUpdate();
+		
+		LogThis.LogIt("info", "Car "+make+ "'s information has been inserted.");
 		
 	}
 
@@ -79,6 +90,7 @@ static Scanner scan = new Scanner(System.in);
 		String sql = "DELETE FROM CAR WHERE CAR_ID = "+id+"";
 		stmt.executeQuery(sql); 
 		System.out.println("Car ID = "+id+" has been successfully removed.");
+		LogThis.LogIt("info", "Car ID "+id+ " 's informations has been deleted.");
 		
 	}
 

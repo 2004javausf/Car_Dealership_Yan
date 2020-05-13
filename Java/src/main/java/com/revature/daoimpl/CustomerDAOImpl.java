@@ -33,7 +33,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 		Connection conn = cf.getConnection();
 		Statement stmt = conn.createStatement();
 		String sql = "INSERT INTO CUSTOMER VALUES(MYSEQ3.NEXTVAL" + ",'"+us+"','"+pa+"','"+na+"','0','0')";
-		LogThis.LogIt("info", sql+ " A new Customer Account has been created.");
+		LogThis.LogIt("info", "A new Customer Account "+us+ " has been created.");
 		stmt.executeQuery(sql);	
 		
 	}
@@ -56,9 +56,9 @@ public class CustomerDAOImpl implements CustomerDAO {
 	@Override
 	public String cLogin() throws SQLException {
 		// TODO Auto-generated method stub
-		System.out.println("Enter customer username:");
+		System.out.println("Enter Customer Username:");
 		String username = scan.nextLine();
-		System.out.println("Enter customer password:");
+		System.out.println("Enter Customer Password:");
 		String password = scan.nextLine();
 		
 		Connection conn = cf.getConnection();
@@ -67,7 +67,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 		ResultSet rs = stmt.executeQuery("SELECT CUSTOMER_USERNAME, CUSTOMER_PASSWORD FROM CUSTOMER WHERE CUSTOMER_USERNAME = '"+username+"' AND CUSTOMER_PASSWORD = '"+password+"'");
 		if(rs.next() == true) {
 			System.out.println("Login in success!");
-			LogThis.LogIt("info", rs.getString(4)+ " has Logged in.");
+			LogThis.LogIt("info", "Account "+username+ " has Logged in.");
 		} else {
 			System.out.println("Your account information is not in the system.");
 			System.out.println("Would you like to try again? (y/n)");

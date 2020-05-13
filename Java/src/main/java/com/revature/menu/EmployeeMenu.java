@@ -77,8 +77,7 @@ public class EmployeeMenu {
 				System.out.println("============================");
 				System.out.println("1. Approve Pending Offers.");
 				System.out.println("2. Deny Pending Offers.");
-				System.out.println("3. Going back to Employee Menu.");
-				System.out.println("4. Exit.");
+				System.out.println("3. Back to Privious Menu.");
 				System.out.println("============================");
 				
 				option = scan.nextInt();
@@ -100,16 +99,12 @@ public class EmployeeMenu {
 					}
 					break;
 				case 3:
-					EmployeeMenu.employeeMenu();
-					break;
-				case 4:
-					System.out.println("Thank you for choosing our service. ");
 					break;
 				default:
 			        System.out.println("Invalid Input, Try again.");
 					break;
 				}
-			} while (option!=4);
+			} while (option!=3);
 			break;
 		case 4:
 			System.out.println("View customer payments:");
@@ -121,18 +116,17 @@ public class EmployeeMenu {
 			}
 			break;
 		case 5:
+			System.out.println("========================================");
 			System.out.println("Thanks for using our services. ");
-			System.out.println("\n");
 			break;
 		default:
 			System.out.println("Please make a option from 1-5.");
 			break;
 		}
 	} while (option != 5);
-	System.out.println("========================================");
-	System.out.println("Good bye!");
-	System.out.println("========================================");
 
+	System.out.println("See you!");
+	System.out.println("========================================");
 	}
 }
 

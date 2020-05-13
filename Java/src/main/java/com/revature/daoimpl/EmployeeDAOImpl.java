@@ -55,9 +55,9 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 	@Override
 	public void eLogin() throws SQLException {
 		// TODO Auto-generated method stub
-		System.out.println("Enter employee username:");
+		System.out.println("Enter Employee Username:");
 		String username = scan.nextLine();
-		System.out.println("Enter employee password:");
+		System.out.println("Enter Employee Password:");
 		String password = scan.nextLine();
 		
 		Connection conn = cf.getConnection();
@@ -66,7 +66,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 		ResultSet rs = stmt.executeQuery("SELECT * FROM EMPLOYEE WHERE EMPLOYEE_USERNAME = '"+username+"' AND EMPLOYEE_PASSWORD = '"+password+"'");
 		if(rs.next() == true) {
 			System.out.println("Login in success!");
-			LogThis.LogIt("info", rs.getString(4)+ " has Logged in.");
+			LogThis.LogIt("info", "Employee "+rs.getString(4)+" has Logged in.");
 		} else {
 			System.out.println("Your account information is not in the system.");
 			EmployeeMenu.eLoginMenu();

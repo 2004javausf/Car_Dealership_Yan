@@ -76,8 +76,8 @@ public class OfferPayment {
 
 	@Override
 	public String toString() {
-		return "CUSTOMER PAYMENTS: [Offer ID =" + offerid + ", CUSTOMER ID =" + cusid + ", CUSTOMER NAME =" + cusname + ", CAR ID =" + carid
-				+ ", CAR NAME =" + carname + ", Price =" + price + ", Balance =" + balance + ", Payment =" + payment +"]\n";
+		return "CUSTOMER PAYMENTS: [Offer ID =" + offerid + ", Customer ID =" + cusid + ", Customer Name =" + cusname + ", Car ID =" + carid
+				+ ", Car NAME =" + carname + ", Price =$" + price + ", Balance =$" + balance + ", Payment =$" + payment +"]\n";
 	}
 
 	

@@ -1,2 +1,49 @@
 [INFO ] 2020-05-12 13:26:18.532 [main] LogThis - INSERT INTO CAR VALUES(MYSEQ.NEXTVAL,'Chevrolet','2011, Equinox LT, 95K miles',13599.0,'Available')has been inserted.
 [INFO ] 2020-05-12 13:36:33.897 [main] LogThis - Yan has Logged in.
+[INFO ] 2020-05-12 16:03:36.855 [main] LogThis - Yan has Logged in.
+[INFO ] 2020-05-12 17:56:49.741 [main] LogThis - Yan has Logged in.
+[INFO ] 2020-05-12 18:00:55.878 [main] LogThis - INSERT INTO CAR VALUES(MYSEQ.NEXTVAL,?,?,?,'Available')has been inserted.
+[INFO ] 2020-05-12 18:12:13.881 [main] LogThis - Yan has Logged in.
+[INFO ] 2020-05-12 18:14:29.496 [main] LogThis - Car Nissan's imformation has been inserted.
+[INFO ] 2020-05-12 18:24:17.402 [main] LogThis - Yan has Logged in.
+[INFO ] 2020-05-12 18:30:48.727 [main] LogThis - Account customer001 has Logged in.
+[INFO ] 2020-05-12 18:40:42.286 [main] LogThis - Account customer001 has Logged in.
+[INFO ] 2020-05-12 18:42:01.485 [main] LogThis - A New Offer for CAR ID = 69 are waiting for your approval.
+[INFO ] 2020-05-12 18:47:37.162 [main] LogThis - Account customer001 has Logged in.
+[INFO ] 2020-05-12 18:57:02.682 [main] LogThis - Account customer001 has Logged in.
+[INFO ] 2020-05-12 19:00:18.019 [main] LogThis - Yan has Logged in.
+[INFO ] 2020-05-12 19:01:44.654 [main] LogThis - The CAR ID :69, has been denied.
+[INFO ] 2020-05-12 19:07:50.476 [main] LogThis - Yan has Logged in.
+[INFO ] 2020-05-12 19:09:22.521 [main] LogThis - Yan has Logged in.
+[INFO ] 2020-05-12 19:12:22.600 [main] LogThis - INSERT INTO CUSTOMER VALUES(MYSEQ3.NEXTVAL,'customer002','000002','Ashton','0','0') A new Customer Account has been created.
+[INFO ] 2020-05-12 19:13:19.946 [main] LogThis - Account customer002 has Logged in.
+[INFO ] 2020-05-12 19:15:51.288 [main] LogThis - A New Offer for CAR ID = 69 are waiting for our approval.
+[INFO ] 2020-05-12 19:19:35.297 [main] LogThis - Account customer002 has Logged in.
+[INFO ] 2020-05-12 19:21:08.072 [main] LogThis - Account customer002 has Logged in.
+[INFO ] 2020-05-12 19:21:28.440 [main] LogThis - A New Offer for CAR ID = 71 are waiting for our approval.
+[INFO ] 2020-05-12 19:21:39.385 [main] LogThis - A New Offer for CAR ID = 72 are waiting for our approval.
+[INFO ] 2020-05-12 19:22:35.277 [main] LogThis - Account customer001 has Logged in.
+[INFO ] 2020-05-12 19:22:45.951 [main] LogThis - A New Offer for CAR ID = 81 are waiting for our approval.
+[INFO ] 2020-05-12 19:23:23.554 [main] LogThis - Yan has Logged in.
+[INFO ] 2020-05-12 19:24:03.610 [main] LogThis - The CAR ID :69, has been approved.
+[INFO ] 2020-05-12 19:25:01.953 [main] LogThis - The CAR ID :71, has been denied.
+[INFO ] 2020-05-12 19:33:26.391 [main] LogThis - Account customer002 has Logged in.
+[INFO ] 2020-05-12 19:37:30.994 [main] LogThis - A new Customer Account customer003 has been created.
+[INFO ] 2020-05-12 19:37:50.992 [main] LogThis - Account customer003 has Logged in.
+[INFO ] 2020-05-12 19:50:20.076 [main] LogThis - Employee Yan has Logged in.
+[INFO ] 2020-05-12 19:51:50.413 [main] LogThis - Car Ford's information has been inserted.
+[INFO ] 2020-05-12 19:52:24.498 [main] LogThis - Car Nissan's information has been inserted.
+[INFO ] 2020-05-12 19:53:04.532 [main] LogThis - Car Nissan's information has been inserted.
+[INFO ] 2020-05-12 19:54:11.052 [main] LogThis - Car Volkswagen's information has been inserted.
+[INFO ] 2020-05-12 19:54:57.802 [main] LogThis - Car Volkswagen's information has been inserted.
+[INFO ] 2020-05-12 22:08:19.781 [main] LogThis - Car Pretty's information has been inserted.
+[INFO ] 2020-05-12 22:20:18.195 [main] LogThis - Car Kia's information has been inserted.
+[INFO ] 2020-05-12 22:24:14.143 [main] LogThis - Car Toyota's information has been inserted.
+[INFO ] 2020-05-12 22:26:56.336 [main] LogThis - Employee Yan has Logged in.
+[INFO ] 2020-05-12 22:27:18.923 [main] LogThis - Car ID 88 's imformation has been deleted.
+[INFO ] 2020-05-12 22:48:24.735 [main] LogThis - Car Nissan's information has been inserted.
+[INFO ] 2020-05-12 23:03:32.330 [main] LogThis - Account customer002 has Logged in.
+[INFO ] 2020-05-12 23:04:06.173 [main] LogThis - A New Offer for CAR ID = 84 are waiting for our approval.
+[INFO ] 2020-05-12 23:04:41.687 [main] LogThis - Employee Yan has Logged in.
+[INFO ] 2020-05-12 23:05:05.046 [main] LogThis - The CAR ID :72, has been approved.
+[INFO ] 2020-05-12 23:06:03.838 [main] LogThis - Account customer002 has Logged in.

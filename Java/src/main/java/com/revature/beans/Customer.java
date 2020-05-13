@@ -70,8 +70,8 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return "Customer [id=" + id + ", password=" + password + ", name=" + name + ", car=" + car + ", payments="
-				+ payments + ", balance=" + balance + "]\n";
+		return "Customer [id=" + id + ", password=" + password + ", name=" + name + ", car=" + car + ", payments=$"
+				+ payments + ", balance=$" + balance + "]\n";
 	}
 
 	

@@ -36,7 +36,7 @@ public class OfferDAOImpl implements OfferDAO {
 			String name = rss.getString(4);
 		    ResultSet rs = stmt.executeQuery("SELECT * FROM CAR WHERE CAR_ID = '"+id+"' AND CAR_STATUS = 'Available'");
 			if(rs.next() == true)  { 
-				LogThis.LogIt("info", "A New Offer for CAR ID = "+rs.getInt(1)+ " are waiting for your approval.");
+				LogThis.LogIt("info", "A New Offer for CAR ID = "+rs.getInt(1)+ " are waiting for our approval.");
 				String sql ="INSERT INTO OFFER VALUES(MYSEQ4.NEXTVAL" + ",'"+id+"','"+cuid+"','"+ rs.getString(2)+"',"+ rs.getDouble(4)+",'"+name+"','Pending',0,0,0)";
 				stmt.executeQuery(sql);
 			} else {
@@ -44,6 +44,7 @@ public class OfferDAOImpl implements OfferDAO {
 				odi.insertOffer(username);
 			}
 		}
+		System.out.println("============================");
 		System.out.println("Thank you! Please wait 3-5 business days to be appoved!");
 		return id;
 	}
@@ -138,7 +139,7 @@ public class OfferDAOImpl implements OfferDAO {
 		ResultSet rss = stmt.executeQuery("SELECT * FROM CUSTOMER WHERE CUSTOMER_USERNAME = '"+username+"'");
 		if(rss.next() == true) {
 			int cuid = rss.getInt(1);
-			ResultSet rs = stmt.executeQuery("SELECT * FROM OFFER WHERE CUSTOMER_ID = "+cuid+" AND OFFER_STATUS = 'Sold'");
+			ResultSet rs = stmt.executeQuery("SELECT * FROM OFFER WHERE CUSTOMER_ID = "+cuid+" AND OFFER_STATUS = 'Proved'");
 		    OfferRemain o = null;
 		    while(rs.next()) {
 			    o = new OfferRemain(rs.getString(6),rs.getString(4),rs.getDouble(5),rs.getDouble(8),rs.getDouble(9),rs.getDouble(10));

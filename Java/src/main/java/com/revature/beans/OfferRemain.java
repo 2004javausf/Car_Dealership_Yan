@@ -56,8 +56,8 @@ public class OfferRemain {
 	}
 	@Override
 	public String toString() {
-		return "Remain Payments [customer name=" + cusname + ", carname=" + carname + ", price=" + price + ", balance=" + balance
-				+ ", monthly24=" + monthly24 + ", monthly36=" + monthly36 + "]\n";
+		return "Remain Payments [Customer name=" + cusname + ", Car name=" + carname + ", Price=$" + price + ", Balance=$" + balance
+				+ ", 24 Monthly=$" + monthly24 + ",  36 monthly=$" + monthly36 + "]\n";
 	}
 	
 	

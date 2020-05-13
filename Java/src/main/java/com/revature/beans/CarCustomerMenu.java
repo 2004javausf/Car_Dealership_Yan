@@ -38,7 +38,7 @@ public class CarCustomerMenu {
 	}
 	@Override
 	public String toString() {
-		return "CarCustomerMenu [id=" + id + ", name=" + name + ", information=" + information + ", price=" + price
+		return "Car Menu: [Car Id=" + id + ", Make=" + name + ", Information=" + information + ", Price=$" + price
 				+ "]\n";
 	}
 

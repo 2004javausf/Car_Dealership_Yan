@@ -62,8 +62,8 @@ public class OfferPending {
 	}
 	@Override
 	public String toString() {
-		return "OfferPending [id=" + id + ", carid=" + carid + ", cusid=" + cusid + ", carname=" + carname + ", price="
-				+ price + ", cusname=" + cusname + ", status=" + status + "]\n";
+		return "Pending Offers [Offer Id=" + id + ", Car Id=" + carid + ", Customer Id=" + cusid + ", Car Name=" + carname + ", Price=$"
+				+ price + ", Customer Name=" + cusname + ", Status=" + status + "]\n";
 	}
 	
 }
